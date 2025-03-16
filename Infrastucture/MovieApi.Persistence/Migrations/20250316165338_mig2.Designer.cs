@@ -12,8 +12,8 @@ using MovieApi.Persistence.Context;
 namespace MovieApi.Persistence.Migrations
 {
     [DbContext(typeof(CategoryContext))]
-    [Migration("20250316153230_mig1")]
-    partial class mig1
+    [Migration("20250316165338_mig2")]
+    partial class mig2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -102,6 +102,9 @@ namespace MovieApi.Persistence.Migrations
 
                     b.Property<decimal>("Rating")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("ReleaseDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<bool>("Status")
                         .HasColumnType("bit");

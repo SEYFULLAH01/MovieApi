@@ -10,7 +10,7 @@ using MovieApi.Persistence.Context;
 
 namespace MovieApi.Persistence.Migrations
 {
-    [DbContext(typeof(MovieContext))]
+    [DbContext(typeof(CategoryContext))]
     partial class MovieContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -99,6 +99,9 @@ namespace MovieApi.Persistence.Migrations
 
                     b.Property<decimal>("Rating")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("ReleaseDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
