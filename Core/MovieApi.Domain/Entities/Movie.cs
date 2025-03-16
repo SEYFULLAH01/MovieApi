@@ -15,7 +15,6 @@ namespace MovieApi.Domain.Entities
         public string Description { get; set; }
         public int Duration { get; set; }
         public DateTime ReleaseDate { get; set; }
-
         public string CreatedYear { get; set; }
         public bool Status { get; set; }
 
