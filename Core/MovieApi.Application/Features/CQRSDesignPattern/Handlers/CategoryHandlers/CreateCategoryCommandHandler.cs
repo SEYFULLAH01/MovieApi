@@ -11,8 +11,8 @@ namespace MovieApi.Application.Features.CQRSDesignPattern.Handlers.CategoryHandl
 {
     public class CreateCategoryCommandHandler
     {
-        private readonly CategoryContext _context;
-        public CreateCategoryCommandHandler(CategoryContext context)
+        private readonly MovieContext _context;
+        public CreateCategoryCommandHandler(MovieContext context)
         {
             _context = context;
         }
